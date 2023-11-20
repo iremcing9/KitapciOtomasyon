@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor_ayar" prefHeight="550.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.YoneticiTercihController">
+   <children>
+      <ImageView fitHeight="603.0" fitWidth="997.0" layoutX="7.0" layoutY="-8.0" opacity="0.71" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@kitapciklasor/beyazkitap.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn_duzenle" layoutX="104.0" layoutY="167.0" mnemonicParsing="false" onAction="#Click_btnduzenle" prefHeight="47.0" prefWidth="236.0" style="-fx-background-color: #c73232;" text="Ürün Düzenle" textFill="WHITE">
+         <font>
+            <Font name="Gabriola" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_kulduzenle" layoutX="104.0" layoutY="258.0" mnemonicParsing="false" onAction="#Click_btnkulduzenle" prefHeight="47.0" prefWidth="236.0" style="-fx-background-color: #c73232;" text="Kullanıcıları Göster" textFill="WHITE">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_cikis" layoutX="104.0" layoutY="341.0" mnemonicParsing="false" onAction="#Click_btncikis" prefHeight="47.0" prefWidth="236.0" style="-fx-background-color: #c73232;" text="Çıkış" textFill="WHITE">
+         <font>
+            <Font name="Gabriola" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="104.0" layoutY="48.0" text="Yönetici Ayarları" textFill="#c73232">
+         <font>
+            <Font name="Gabriola" size="48.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

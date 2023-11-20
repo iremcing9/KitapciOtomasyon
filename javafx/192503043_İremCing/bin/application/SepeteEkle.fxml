@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SepeteEkleController">
+   <children>
+      <ImageView fitHeight="602.0" fitWidth="992.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@kitapciklasor/Adsız%20tasarım%20(1).jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="367.0" layoutY="29.0" text="Sepetim" textFill="#a92323">
+         <font>
+            <Font name="Gabriola" size="48.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableview" layoutX="-4.0" layoutY="136.0" onMouseClicked="#tableview_Click" opacity="0.79" prefHeight="344.0" prefWidth="852.0">
+        <columns>
+            <TableColumn fx:id="sepetID1" prefWidth="113.6000075340271" text="sepetID" />
+          <TableColumn fx:id="tw_kitapadi" prefWidth="150.40001678466797" text="Kitap Adı" />
+          <TableColumn fx:id="tw_tur" prefWidth="163.20001220703125" text="Tür" />
+            <TableColumn fx:id="tw_kuldurum" prefWidth="173.60006713867188" text="Kullanım Durumu" />
+            <TableColumn fx:id="tw_fiyat" prefWidth="117.59991455078125" text="Fiyat" />
+            <TableColumn fx:id="tw_yazar" prefWidth="134.4000244140625" text="Yazar" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_tamamla" layoutX="507.0" layoutY="505.0" mnemonicParsing="false" onAction="#Click_btntamamla" prefHeight="38.0" prefWidth="143.0" style="-fx-background-color: white;" text="Alış Verişi Tamamla" textFill="#0b1ba6" />
+      <Button fx:id="btn_devam" layoutX="683.0" layoutY="505.0" mnemonicParsing="false" onAction="#Click_btndevam" prefHeight="38.0" prefWidth="143.0" style="-fx-background-color: white;" text="Alış Verişe Devam Et" textFill="#0b1ba6" />
+      <Button fx:id="btn_temizle" layoutX="350.0" layoutY="505.0" mnemonicParsing="false" onAction="#Click_btntemizle" prefHeight="38.0" prefWidth="143.0" style="-fx-background-color: white;" text="Temizle" textFill="#0b1ba6" />
+   </children>
+</AnchorPane>

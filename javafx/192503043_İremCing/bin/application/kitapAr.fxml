@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor_ara" prefHeight="550.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.kitapArController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="550.0" prefWidth="850.0">
+         <children>
+            <SplitPane dividerPositions="0.2489391796322489" layoutX="130.0" layoutY="77.0" prefHeight="550.0" prefWidth="850.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="612.0" fitWidth="309.0" layoutX="-101.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@kitapciklasor/e05a47ac30f0a6e3b7010faeb0346dfe.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" opacity="0.59" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #fa8072;">
+                     <children>
+                        <RadioButton fx:id="radio_tur" layoutX="23.0" layoutY="119.0" mnemonicParsing="false" onAction="#Click_radiotur" text="Tür">
+                           <font>
+                              <Font name="Gabriola" size="18.0" />
+                           </font>
+                        </RadioButton>
+                        <Label layoutX="149.0" layoutY="14.0" text="Aradığın Kitap Bir Tık Uzağında" textFill="#360202">
+                           <font>
+                              <Font name="Gabriola" size="36.0" />
+                           </font>
+                        </Label>
+                        <RadioButton fx:id="radio_fiyat" layoutX="89.0" layoutY="119.0" mnemonicParsing="false" onAction="#Click_radiofiyat" text="Fiyat">
+                           <font>
+                              <Font name="Gabriola" size="18.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="radio_kuldurum" layoutX="156.0" layoutY="119.0" mnemonicParsing="false" onAction="#Click_radiokuldurum" text="Kullanım Durumu">
+                           <font>
+                              <Font name="Gabriola" size="18.0" />
+                           </font>
+                        </RadioButton>
+                        <TextField fx:id="txt_ara" layoutX="23.0" layoutY="163.0" prefHeight="26.0" prefWidth="251.0" />
+                        <TableView fx:id="tableview" layoutX="-5.0" layoutY="224.0" onMouseClicked="#tableview_Click" opacity="0.79" prefHeight="325.0" prefWidth="642.0">
+                          <columns>
+                            <TableColumn fx:id="tw_kitapadi" prefWidth="123.9999418258667" text="Kitap Adı" />
+                            <TableColumn fx:id="tw_tur" prefWidth="123.199951171875" text="Tür" />
+                              <TableColumn fx:id="tw_kuldurum" prefWidth="143.19996643066406" text="Kullanım Durumu" />
+                              <TableColumn fx:id="tw_fiyat" prefWidth="118.39996337890625" text="Fiyat" />
+                              <TableColumn fx:id="tw_yazar" prefWidth="135.199951171875" text="Yazar" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="btn_ara" layoutX="291.0" layoutY="163.0" mnemonicParsing="false" onAction="#Click_btnara" prefHeight="26.0" prefWidth="53.0" text="Ara" />
+                        <Button fx:id="btn_sepetekle" layoutX="537.0" layoutY="92.0" mnemonicParsing="false" onAction="#btnsepetekle_Click" prefHeight="26.0" prefWidth="83.0" text="Sepete Ekle" />
+                        <Button fx:id="btn_sepetegit" layoutX="537.0" layoutY="130.0" mnemonicParsing="false" onAction="#Click_btn_sepetegit" prefHeight="26.0" prefWidth="83.0" text="Sepete Git" />
+                        <Button fx:id="btn_cikis" layoutX="537.0" layoutY="163.0" mnemonicParsing="false" onAction="#Click_btncikis" prefHeight="26.0" prefWidth="83.0" text="Çıkış" />
+                        <Button fx:id="btn_temizle" layoutX="354.0" layoutY="163.0" mnemonicParsing="false" onAction="#Click_btntemizle" prefHeight="26.0" prefWidth="60.0" text="Temizle" />
+                        <RadioButton fx:id="radio_yazar" layoutX="299.0" layoutY="119.0" mnemonicParsing="false" onAction="#Click_radioyazar" text="Yazar">
+                           <font>
+                              <Font name="Gabriola" size="18.0" />
+                           </font>
+                        </RadioButton>
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
